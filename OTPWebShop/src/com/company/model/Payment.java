@@ -1,12 +1,9 @@
 package com.company.model;
 
 public class Payment {
-    private String webShopIid;
+    private String webShopId;
     private String paymentCustomerId;
-    private enum paymentMethod {
-        CARD,
-        TRANSFER
-    };
+    private String paymentMethod;
     private double sum;
     private String bankAccountNumber;
     private String cardNumber;
@@ -15,12 +12,41 @@ public class Payment {
     public Payment() {
     }
 
-    public Payment(String webShopIid, String paymentCustomerId, double sum, String bankAccountNumber, String cardNumber, String paymentDate) {
-        this.webShopIid = webShopIid;
+    public Payment(String webShopId, String paymentCustomerId, String paymentMethod, double sum, String bankAccountNumber, String cardNumber, String paymentDate) {
+        this.webShopId = webShopId;
         this.paymentCustomerId = paymentCustomerId;
+        this.paymentMethod = paymentMethod;
         this.sum = sum;
         this.bankAccountNumber = bankAccountNumber;
         this.cardNumber = cardNumber;
         this.paymentDate = paymentDate;
+    }
+
+    public String getWebShopId() {
+        return webShopId;
+    }
+
+    public String getPaymentCustomerId() {
+        return paymentCustomerId;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public double getSum() {
+        return sum;
+    }
+
+    public String getBankAccountNumber() {
+        return bankAccountNumber;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public String getPaymentDate() {
+        return paymentDate;
     }
 }

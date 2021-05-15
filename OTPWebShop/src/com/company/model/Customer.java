@@ -15,4 +15,20 @@ public class Customer {
         this.name = name;
         this.address = address;
     }
+
+    public String getWebId() {
+        return webId;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 }

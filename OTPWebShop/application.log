@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-15T17:38:13.884502100Z</date>
+  <millis>1621100293884</millis>
+  <nanos>502100</nanos>
+  <sequence>0</sequence>
+  <logger>com.company.repository.PaymentRepository</logger>
+  <level>WARNING</level>
+  <class>com.company.repository.PaymentRepository</class>
+  <method>readFromFile</method>
+  <thread>1</thread>
+  <message>WS02;A03;card;2900;6760000000000000;;2021.01.21</message>
+</record>
+<record>
+  <date>2021-05-15T17:38:13.946986300Z</date>
+  <millis>1621100293946</millis>
+  <nanos>986300</nanos>
+  <sequence>1</sequence>
+  <logger>com.company.repository.PaymentRepository</logger>
+  <level>WARNING</level>
+  <class>com.company.repository.PaymentRepository</class>
+  <method>readFromFile</method>
+  <thread>1</thread>
+  <message>WS01;A02;card;20234;;377947000000000;2021.01.11</message>
+</record>
+</log>
