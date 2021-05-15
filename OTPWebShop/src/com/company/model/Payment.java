@@ -1,8 +1,5 @@
 package com.company.model;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-
 public class Payment {
     private String webShopId;
     private String paymentCustomerId;
