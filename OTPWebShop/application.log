@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-05-15T15:06:58.653890100Z</date>
-  <millis>1621091218653</millis>
-  <nanos>890100</nanos>
+  <date>2021-05-15T15:26:58.345728800Z</date>
+  <millis>1621092418345</millis>
+  <nanos>728800</nanos>
   <sequence>0</sequence>
   <logger>com.company.repository.PaymentRepository</logger>
   <level>WARNING</level>
@@ -14,9 +14,9 @@
   <message>WS02;A03;card;2900;6760000000000000;;2021.01.21</message>
 </record>
 <record>
-  <date>2021-05-15T15:06:58.718393700Z</date>
-  <millis>1621091218718</millis>
-  <nanos>393700</nanos>
+  <date>2021-05-15T15:26:58.392594600Z</date>
+  <millis>1621092418392</millis>
+  <nanos>594600</nanos>
   <sequence>1</sequence>
   <logger>com.company.repository.PaymentRepository</logger>
   <level>WARNING</level>

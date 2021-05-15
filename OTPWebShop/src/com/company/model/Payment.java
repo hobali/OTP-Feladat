@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Payment {
-    private String webShopIid;
+    private String webShopId;
     private String paymentCustomerId;
     private String paymentMethod;
     private double sum;
@@ -15,8 +15,8 @@ public class Payment {
     public Payment() {
     }
 
-    public Payment(String webShopIid, String paymentCustomerId, String paymentMethod, double sum, String bankAccountNumber, String cardNumber, String paymentDate) {
-        this.webShopIid = webShopIid;
+    public Payment(String webShopId, String paymentCustomerId, String paymentMethod, double sum, String bankAccountNumber, String cardNumber, String paymentDate) {
+        this.webShopId = webShopId;
         this.paymentCustomerId = paymentCustomerId;
         this.paymentMethod = paymentMethod;
         this.sum = sum;
@@ -25,8 +25,8 @@ public class Payment {
         this.paymentDate = paymentDate;
     }
 
-    public String getWebShopIid() {
-        return webShopIid;
+    public String getWebShopId() {
+        return webShopId;
     }
 
     public String getPaymentCustomerId() {

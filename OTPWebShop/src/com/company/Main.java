@@ -15,8 +15,8 @@ public class Main {
     public static void main(String[] args) {
         CustomerRepository customerRepository = new CustomerRepository();
         PaymentRepository paymentRepository = new PaymentRepository();
-
-        paymentRepository.writeToFile("report02.csv");
-        customerRepository.writeToFile("report01.csv");
+        ReportMaker rm = new ReportMaker();
+        rm.makeReport01("report01.csv", paymentRepository.getPayments(), customerRepository.getCustomers());
+        rm.makeReport02("report02.csv", paymentRepository.getPayments());
     }
 }
