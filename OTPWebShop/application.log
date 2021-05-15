@@ -2,10 +2,22 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-05-15T13:52:36.292100500Z</date>
-  <millis>1621086756292</millis>
-  <nanos>100500</nanos>
+  <date>2021-05-15T14:04:17.346530800Z</date>
+  <millis>1621087457346</millis>
+  <nanos>530800</nanos>
   <sequence>0</sequence>
+  <logger>com.company.repository.PaymentRepository</logger>
+  <level>WARNING</level>
+  <class>com.company.repository.PaymentRepository</class>
+  <method>readFromFile</method>
+  <thread>1</thread>
+  <message>WS02;A03;card;2900;6760000000000000;;2021.01.21</message>
+</record>
+<record>
+  <date>2021-05-15T14:04:17.399902100Z</date>
+  <millis>1621087457399</millis>
+  <nanos>902100</nanos>
+  <sequence>1</sequence>
   <logger>com.company.repository.PaymentRepository</logger>
   <level>WARNING</level>
   <class>com.company.repository.PaymentRepository</class>

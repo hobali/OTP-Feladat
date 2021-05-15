@@ -33,7 +33,6 @@ public class PaymentRepository implements IRepository {
             while ((readed = reader.readLine()) != null){
                 String[] splittedLine = readed.split(";");
                 if(!validation(splittedLine)){
-                    // TODO: LOG
                     logger.warning(readed);
                 }else{
                     payments.add(new Payment(splittedLine[0], splittedLine[1], splittedLine[2], Double.parseDouble(splittedLine[3]), convertBigIntToString(splittedLine[4]), convertBigIntToString(splittedLine[5]), splittedLine[6]));
@@ -47,17 +46,15 @@ public class PaymentRepository implements IRepository {
 
     @Override
     public boolean validation(String[] input) {
-        for (String s : input) {
-            if (s == null) {
-                return false;
-            }
-        }
-        if (!convertBigIntToString(input[5]).equals("") && input[5].length() != 16){
+        String bankAccountNumber = convertBigIntToString(input[4]);
+        String cardNumber = convertBigIntToString(input[5]);
+
+        if (!cardNumber.equals("") && input[5].length() != 16){
             return false;
-        }else if(input[2].equals("card") && !convertBigIntToString(input[5]).equals("")){
-            return true;
-        }else if(input[2].equals("transfer") && !convertBigIntToString(input[4]).equals("")){
-            return true;
+        }else if(input[2].equals("card") && !bankAccountNumber.equals("")){
+            return false;
+        }else if(input[2].equals("transfer") && !cardNumber.equals("")){
+            return false;
         }
         return true;
     }

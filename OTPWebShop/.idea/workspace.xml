@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ec0cf22-06ac-4126-b829-7018bcbb077e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/payments.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/payments.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/repository/IRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/repository/PaymentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +68,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="199" key="#Inspections" timestamp="1621087432990">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="199" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1621087432990" />
     <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1621083463198">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -81,22 +80,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="283" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1621079782221" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1621086756081">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1621087457130">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1621086756081" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1621086756081">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1621087457130" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1621087457130">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1621086756081" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1621086756081">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1621087457130" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1621087457130">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1621086756081" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1621086756081">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1621087457130" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1621087457130">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1621086756081" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1621087457130" />
     <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1621086632180">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -135,8 +134,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/repository/PaymentRepository.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
+          <line>34</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
