@@ -32,11 +32,10 @@ public class PaymentRepository implements IRepository {
             String readed;
             while ((readed = reader.readLine()) != null){
                 String[] splittedLine = readed.split(";");
-                if(!validation(splittedLine)){
+                if(!validation(splittedLine))
                     logger.warning(readed);
-                }else{
+                else
                     payments.add(new Payment(splittedLine[0], splittedLine[1], splittedLine[2], Double.parseDouble(splittedLine[3]), convertBigIntToString(splittedLine[4]), convertBigIntToString(splittedLine[5]), splittedLine[6]));
-                }
             }
             reader.close();
         }catch (IOException e){

@@ -23,9 +23,13 @@ public class CustomerRepository implements IRepository {
     public void readFromFile(String fileName) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
-            while (reader.readLine() != null){
-                String[] splittedLine = reader.readLine().split(";");
-                customers.add(new Customer(splittedLine[0], splittedLine[1], splittedLine[2], splittedLine[3]));
+            String readed;
+            while ((readed = reader.readLine()) != null){
+                String[] splittedLine = readed.split(";");
+                if (!validation(splittedLine))
+                    logger.warning(readed);
+                else
+                    customers.add(new Customer(splittedLine[0], splittedLine[1], splittedLine[2], splittedLine[3]));
             }
             reader.close();
         }catch (IOException e){
@@ -35,7 +39,7 @@ public class CustomerRepository implements IRepository {
 
     @Override
     public boolean validation(String[] input) {
-        return false;
+        return true;
     }
 
     public List<Customer> getCustomers() {
