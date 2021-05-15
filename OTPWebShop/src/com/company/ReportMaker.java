@@ -2,8 +2,6 @@ package com.company;
 
 import com.company.model.Customer;
 import com.company.model.Payment;
-import com.company.repository.CustomerRepository;
-import com.company.repository.PaymentRepository;
 
 import java.io.FileWriter;
 import java.io.IOException;

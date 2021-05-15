@@ -1,18 +1,15 @@
 package com.company.repository;
 
-import com.company.model.Customer;
 import com.company.model.Payment;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 public class PaymentRepository implements IRepository {
     private List<Payment> payments;

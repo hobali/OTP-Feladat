@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3ec0cf22-06ac-4126-b829-7018bcbb077e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OTPWebShop/com/company/ReportMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OTPWebShop/com/company/ReportMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OTPWebShop/com/company/model/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OTPWebShop/com/company/model/Payment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ReportMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ReportMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/repository/PaymentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
