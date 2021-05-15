@@ -1,6 +1,7 @@
 package com.company.repository;
 
 public interface IRepository {
-    public void readFromFile(String fileName);
-    public boolean validation(String[] input);
+    void readFromFile(String fileName);
+    void writeToFile(String fileName);
+    boolean validation(String[] input);
 }

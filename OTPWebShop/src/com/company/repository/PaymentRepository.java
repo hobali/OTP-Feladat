@@ -5,12 +5,14 @@ import com.company.model.Payment;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class PaymentRepository implements IRepository {
     private List<Payment> payments;
@@ -67,5 +69,36 @@ public class PaymentRepository implements IRepository {
 
     public List<Payment> getPayments() {
         return payments;
+    }
+
+    @Override
+    public void writeToFile(String fileName){
+        List<String> webshops = (List<String>) payments.stream()
+                .map(Payment::getWebShopIid)
+                .distinct()
+                .collect(Collectors.toList());
+        FileWriter fw = null;
+        try{
+            fw = new FileWriter(fileName);
+            int cardSum = 0;
+            int transSum = 0;
+            for (String webShop: webshops) {
+                cardSum = 0;
+                transSum = 0;
+                for(Payment p: payments){
+                    if(webShop.equals(p.getWebShopIid())){
+                        if(p.getPaymentMethod().equals("card"))
+                            cardSum += p.getSum();
+                        else
+                            transSum += p.getSum();
+                    }
+
+                }
+                fw.write(String.format("Webshop: %s Kártyás vásárlások összege: %d Átutalásos vásárlások összege: %d\n", webShop, cardSum, transSum));
+            }
+            fw.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 }

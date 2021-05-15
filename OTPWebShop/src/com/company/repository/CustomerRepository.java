@@ -45,4 +45,9 @@ public class CustomerRepository implements IRepository {
     public List<Customer> getCustomers() {
         return customers;
     }
+
+    @Override
+    public void writeToFile(String fileName) {
+
+    }
 }
