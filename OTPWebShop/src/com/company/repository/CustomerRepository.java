@@ -7,12 +7,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class CustomerRepository implements IRepository {
     private List<Customer> customers;
+    private static Logger logger;
 
     public CustomerRepository(){
         customers = new ArrayList<Customer>();
+        logger = Logger.getLogger("application.log");
         readFromFile("resources/customer.csv");
     }
 
@@ -28,6 +31,11 @@ public class CustomerRepository implements IRepository {
         }catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public boolean validation(String[] input) {
+        return false;
     }
 
     public List<Customer> getCustomers() {
